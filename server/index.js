@@ -21,7 +21,7 @@ const app = express();
 app.use(
   cors({
     credentials: true,
-    origin: 'https://blinkit-project-hxrh.onrender.com/',
+    origin: 'https://blinkit-project-hxrh.onrender.com',
   })
 );
 
