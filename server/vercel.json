@@ -1,16 +1,25 @@
+
+
 {
-   "version": 2,
-   "name": "Blinkit",
-   "builds": [
-      {
-         "src": "./index.js",
-         "use": "@vercel/node"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "distDir": "dist" // Ваш выходной каталог сборки Vite
       }
-   ],
-   "routes": [
-      {
-         "src": "/(.*)",
-         "dest": "/"
-      }
-   ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js" // Путь к вашему серверному файлу после сборки
+    }
+  ],
+  "functions": {
+    "api/server.js": {
+      "memory": 1024,
+      "maxDuration": 300
+    }
+  }
 }
