@@ -1,5 +1,5 @@
 
-export const baseURL = https://blinkit-project-server.onrender.com;
+export const baseURL = 'https://blinkit-project-server.onrender.com';
 
 const SummaryApi = {
    register: {
