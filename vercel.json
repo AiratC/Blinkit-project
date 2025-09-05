@@ -1,0 +1,25 @@
+{
+   "$schema": "https://openapi.vercel.sh/vercel.json",
+   "name": "Blinkit",
+   "builds": [
+      {
+         "src": "../server.js",
+         "use": "@vercel/node"
+      }
+   ],
+   "rewrites": [
+      {
+         "source": "/(.*)",
+         "destination": "/"
+      }
+   ],
+   "regions": [
+      "iad1"
+   ],
+   "trailingSlash": false,
+   "git": {
+      "deploymentEnabled": {
+         "main": true
+      }
+   }
+}
