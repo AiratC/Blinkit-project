@@ -1,5 +1,5 @@
 
-export const baseURL = import.meta.env.VITE_API_URL;
+export const baseURL = https://blinkit-project-server.onrender.com;
 
 const SummaryApi = {
    register: {
